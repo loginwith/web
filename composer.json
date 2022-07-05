@@ -1,0 +1,14 @@
+{
+  "name": "loginwith/web",
+  "type": "project",
+  "require": {
+    "bramus/router": "~1.6",
+    "wildbit/postmark-php": "^4.0",
+    "react/http": "^1.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Loginwith\\": "src/"
+    }
+  }
+}

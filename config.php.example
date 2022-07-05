@@ -1,0 +1,3 @@
+<?php
+// secrets
+define('HMAC_SECRET', 'CHANGEME to a super random value');

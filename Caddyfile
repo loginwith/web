@@ -1,0 +1,15 @@
+loginwith.xyz {
+  tls /etc/ssl/certs/certificate.pem /etc/ssl/private/key.pem
+  log {
+    format json
+  }
+  root * /app/public
+  file_server
+  php_fastcgi localhost:9000
+}
+
+http://:80, http://loginwith.xyz:80 {
+  root * /app/public
+  file_server
+  php_fastcgi localhost:9000
+}
