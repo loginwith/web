@@ -1,3 +1,11 @@
 <?php
 // secrets
 define('HMAC_SECRET', 'CHANGEME to a super random value');
+
+// Postmark
+define('POSTMARK_API_TOKEN', 'CHANGEME');
+
+// Telegram
+define('BOT_TOKEN', 'CHANGEME');
+define('WEBHOOK_URL', 'CHANGEME');
+define('SEND_TO_USERIDS', ['CHANGEME']);

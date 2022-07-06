@@ -36,7 +36,7 @@ function user_auth_send_magic_link($email) {
   $sth = $dbh->prepare("INSERT INTO magic_links (email, id, expires) VALUES (?, ?, ?)");
   $sth->execute([$email, $token, $expires]);
 
-  $client = new PostmarkClient("c9dbe613-1ef7-4ea4-a40c-7559d0080bd6");
+  $client = new PostmarkClient(POSTMARK_API_TOKEN);
   $htmlBody = <<<_EOM
     <strong>LoginWith.xyz</strong><p>Please visit <a href="$url">$url</a> to approve this login attempt.
 _EOM;
